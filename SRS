@@ -1,0 +1,123 @@
+# THE_NSU_LOOP
+
+
+Prepared By:
+### Ahnaf Ismat Tasin 1731 754 042
+### Simon Bin Ahmed 1811 772 642	  
+
+***
+
+
+# Chapter 1
+
+## Introduction
+
+We aim to create a social media platform for connecting potential employers to connect with job-seekers online. We aim to connect people on the basis of trust through their mutual affiliation with North South University. The name of this social media platform will be THE_NSU_LOOP. The idea of the project is to promote a platform for NSU seniors & alumni to connect with each on a personal level for job placement opportunities.
+
+## 1.1 Purpose
+
+Social media platforms have become very influential over the last decade & the popularities of various such platforms have exponentially increased. Acknowledging their ability to connect people, we decided to create a social media platform to specifically connect potential employers with job-seeking NSU seniors. This platform will enable only individuals with an NSU ID to register for their account & this will result in better confidence in users of the platform
+
+## 1.2 Intended Audience
+
+* Developers
+* Project Testers
+* Marketing Department
+
+## 1.3 Intended Use
+
+Developers: Developers can use this SRS to easily understand what’s the project about, which part they should focus more, which part to improve, find if there is any scope to add new features or function for any upgrade.
+Project Testers: Testers can use this SRS to test the software as per requirements. This will make the testing more organized as from SRS testers can easily get the idea where to look and what error or bug they should be looking for.
+Marketing Department: Marketing department can use this SRS to get an idea about what they are going to promote and what are the features of this project and how this features will help the clients or users.
+
+## 1.4 Product Scope
+
+The aim of the project is to create from scratch, an ad-supported web-based social media platform where users can share data in the form of text, photo, or video but in a limited capacity, with additional features of personal interaction & a more streamlined ad-free experience which can be unlocked & experiences behind a paywall. 
+Benefits of this web application:
+* NSU students can directly connect with NSU alumni
+* Their mutual affiliation with NSU will build trust
+* Academic documents & recommendation letters will be verified by our platform
+Objective of this web application:
+* Make the hiring process focused & easier around NSU students & graduates
+
+
+# Chapter 2
+
+## Overall Description
+
+### 2.1 User Classes and Characteristics
+Our priority is to develop a web platform which would be dynamic in nature, meaning we should be able to add, remove or update any feature at any given time. To achieve this goal, we plan to implement a maintenance platform for the project so that we can tackle any problem at any time without it going out-of-service. 
+There will be three types of users in the system. Admins, Employers and Job-Seekers. First of all, the Admin will have control and knowledge over the entire system. They can directly monitor the Employers’ and Job-Seekers’ tasks and also approve connection requests. They can add and remove connections as well. The Admin will have access to the each user’s personal information and has ability to update it as well. 
+
+### 2.2 User Needs
+Our target users will be fresh & recent university graduates seeking internships or part-time, full-time jobs. The necessary details of the credentials of the job-seeking candidates will be verified by our team so that potential employers can expedite the process of hiring candidates. The NID & Student ID of each user will be recorder upon registration & all this information will be stored in our database to give the university officials data regarding the employment rate of the graduates.
+
+### 2.3 Operating Environment
+* Operating System: Windows/ Linux/ Mac
+* Distributed Database: MySQL
+* Front-End: HTML, CSS, JavaScript
+* Back-End: Python
+* Framework: Django
+
+### 2.4 Constraints
+* This web-application will require primarily the learning of Python programming language
+* The project must be completed in 8 weeks
+
+### 2.5 Assumptions
+It will be assumed that the users will possess good internet connectivity. Users will have to register using their NSU email address. The user interface will be in Basic English.
+
+
+# Chapter 3
+
+## Requirements
+
+### 3.1 Functional Requirements
+* As a user, I want to sign-up for THE_NSU_LOOP platform.
+> There will be two different options in the homepage: Register and Sign-in. To sign-into the platform, A user must finish their registration first by provide the first name, last name, email address, user name, password (and retype password). Furthermore, the user must confirm their email and password. Nevertheless, if there have many usernames in one name, then the user needs to change his or her username. The registration information is stored on the database and in future the user will be logged in by providing email and password.
+There should be a few confirmations or pop up notification in the page. For example, “Account Registration Successful!” and proceed to refer to login page.
+If registration is unsuccessful, one of the following applicable messages will display:
+“Email address in wrong format”
+“Your passwords did not match, please try again”
+"Please give your email first"
+"You did not submit your password"
+"You should choose your username”
+“This user name is already exists”
+
+* As a user, I want to search for posts or a specific profile
+> There will be a search function in the homepage, where the user can search for posts or other profiles. The search function will take the input in the form of name, email address, phone number or tags from user and subsequently filter out the product or shop and will view it to the user. If any result is not available than the page will pop out “Not found”.
+
+* As a user, I want to interact with other users
+> Users can send connection requests to other users. Users can also create posts by updating their status in the form of text, or photo or video upload. Other users can like, comment on & share these posts. Premium account users can also personally message other users.
+
+* As a user, I want to be updated of activity regarding my profile
+> Notifications, both pop-up & email (optional) will keep the user informed about each & every activity regarding their profile
+
+* As a user, I want to discover other users near me
+> There will be an option to update user’s phone number & this phone number will be used in Discover New People section to locate users nearby by using Google Maps.
+
+### 3.2 Non Functional Requirements
+
+3.2.1 Security Requirements
+Security requirements of the system:
+* Encrypt users’ private information
+* Encrypt payment information
+* Showing the right content to the right audience.
+
+3.2.2 Security Requirements
+* System will use secure database.
+* OS must handle expected or non-expected errors in ways that prevent loss in information and long down time period.
+* Keeping academic information private.
+
+3.2.3 Performance
+* Maximum number of individuals should be able to concurrently visit the website.
+* System must display applicable error messages.
+* The average response time for user login after entering user name and password should be no more than 3 seconds and the maximum response time should be 10 seconds.
+
+
+# Appendix A
+
+## Glossary
+
+SRS: A software requirements specification (SRS) is a description of a software system to be developed. The software requirements specification lays out functional and non-functional requirements, and it may include a set of use cases that describe user interactions that the software must provide to the user for perfect interaction.
+
+NID: The National Identity Card (NID) is a compulsory identity document issued to every Bangladeshi citizen upon turning 18 years of age. The NID is a government issued photo ID just like the Bangladeshi Driver’s license, which is also a bio-metric, microchip embedded, smart identity card. The NID is required by Bangladeshi citizens for multiple essential public services, such as obtaining utility connections, as well as private services, such as opening bank accounts, in Bangladesh.

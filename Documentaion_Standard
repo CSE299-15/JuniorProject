@@ -1,0 +1,65 @@
+# Python 3 Installation on Windows
+
+1.  Select Version of Python to Install
+1. 	 Download Python Executable Installer from 	“https://www.python.org/downloads/windows/”
+1.  Run Executable Installer
+1. 	 Verify Python Was Installed On Windows.
+1. 		Open the CMD as administrator and type-
+1. 		python --version
+1. 	 Verify Pip Was Installed.
+1. 		Open the CMD as administrator and type-
+1. 		pip --version
+
+1. 	 Add Python Path to Environment Variables
+
+
+# Installing the Django 
+	Installation instructions are slightly different depending on whether you’re installing a 	distribution-specific package, downloading the latest official release, or fetching the 	latest development version.
+	Open the CMD as administrator and type-
+python -m pip install Django
+ 
+ If your distribution already has pip installed, you might need to update it if it’s outdated. If it’s               outdated, you’ll know because installation won’t work.
+     Once Django is installed check the version-
+Python –m django –version
+ 
+
+## Installing the Pycharm IDE and Creating first Django project
+
+1.  Go to the website and download pycharm community edition as it is free and open source.
+1.  https://www.jetbrains.com/pycharm/download/#section=windows
+1.  Install pycharm and create new project
+1.  After creating project select your existing python interpreter and click on create.
+1.  Open CMD as administrator and locate to the project you just created.
+Type-
+ django-admin startproject myproject
+
+1. Locate to the manage.py in our cmd and type-
+1. python manage.py runserver
+
+1.  Copy the starting development server  and paste it in the browser.
+1.  Congratulation. You just created your first Django app successfully.
+
+
+ 
+
+
+# Documenting our Django project using the Sphinx tool
+
+# Installing Sphinx
+First we should enter the virtual environment for our Django project.
+Installing Sphinx is quite straightforward using pip3 (pip for Python 3):
+pip3 install sphinx
+
+## Creating a documentation directory
+Once we’ve installed Sphinx, we will need to create the document root folder. This folder will hold our documentation and other files we will need (images, about pages, and so on…).Create our document root folder in our project main folder and name it /docs.To start Sphinx, we run this command inside our /docs folder:
+sphinx-quickstart
+then we need to   connect our Django with it .
+
+# About sphinx 
+A documentation system ,or tool through which  a plain text can  be translated from source file to various output format  basically created for  documentation of python language .there are many features of sphinix. 
+## Benefits of sphinx___
+1. Effortless documentation of objects for any domain.
+1. Converts a set of plain text source files into various output formats, automatically producing cross-references, index, etc
+1. A bunch of markdown documents, can be converted into a series of HTML files, a PDF file (via LaTeX), and much more.
+
+A process of documentation using sphinix: https://www.youtube.com/watch?v=MeaDUypDAoI

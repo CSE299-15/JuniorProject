@@ -61,6 +61,26 @@ class Profile(models.Model):
     def get_friends_no(self):
         return self.friends.all().count()
 
+    def get_posts_no(self):
+        return self.posts.all().count()
+
+    def get_all_authors_posts(self):
+        return self.posts.all()
+
+    def get_likes_given_no(self):
+        likes = self.like_set.all()
+        total_liked = 0
+        for item in likes:
+            if item.value=='Like':
+                total_liked += 1
+        return total_liked
+
+    def get_likes_recieved_no(self):
+        posts = self.posts.all()
+        total_liked = 0
+        for item in posts:
+            total_liked += item.liked.all().count()
+        return total_liked
 
 
     __initial_first_name = None
@@ -107,4 +127,4 @@ class Relationship(models.Model):
     objects = RelationshipManager()
 
     def __str__(self):
-        return f"{self.sender}-{self.receiver}-{self.status}"
+        return f"{self.sender}-{self.receiver}-{self.status}"  
